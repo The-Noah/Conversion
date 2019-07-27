@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Conversion"
         mc:Ignorable="d"
-        Title="Conversion" Width="400" Height="200" ResizeMode="CanMinimize">
+        Title="Conversion" Width="400" Height="170" ResizeMode="CanMinimize">
   <Window.Resources>
     <ResourceDictionary>
       <Style TargetType="{x:Type TextBox}">
@@ -23,7 +23,7 @@
       </Style>
     </ResourceDictionary>
   </Window.Resources>
-  <Grid Margin="3,2">
+  <Grid Margin="4,2">
     <StackPanel>
       <ComboBox x:Name="MeasurementComboBox" SelectionChanged="MeasurementComboBox_SelectionChanged"/>
       <Grid Margin="0,8,0,0">
