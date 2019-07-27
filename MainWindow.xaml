@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Conversion"
         mc:Ignorable="d"
-        Title="Conversion" Width="400" Height="170" ResizeMode="CanMinimize">
+        Title="Conversion" Width="400" Height="170" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen">
   <Window.Resources>
     <ResourceDictionary>
       <Style TargetType="{x:Type TextBox}">
