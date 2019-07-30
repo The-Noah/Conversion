@@ -17,6 +17,7 @@ namespace Conversion{
 
       converters.Add(new TempuratureConverter());
       converters.Add(new Converters.LengthConverter());
+      converters.Add(new FrequencyConverter());
 
       foreach(Converter converter in converters){
         MeasurementComboBox.Items.Add(new ComboBoxItem(){
