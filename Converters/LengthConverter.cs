@@ -2,13 +2,14 @@
 
 namespace Conversion.Converters{
   public class LengthConverter : Converter{
-    public override string[] measurements => new string[]{"Inch", "Foot", "Yard", "Mile", "Millimeter", "Centimeter", "Meter", "Kilometer"};
+    public override string[] measurements => new string[]{"Inch", "Foot", "Yard", "Mile", "Nautical Mile", "Millimeter", "Centimeter", "Meter", "Kilometer"};
     public override string name => "Length";
 
     private const double INCH_TO_METER = .0254;
     private const double FOOT_TO_METER = .3048;
     private const double YARD_TO_METER = .9144;
     private const double MILE_TO_METER = 1609.344;
+    private const double NMILE_TO_METER = 1852.0;
     private const double MM_TO_METER = .001;
     private const double CM_TO_METER = .01;
     private const double KM_TO_METER = 1000.0;
@@ -37,12 +38,14 @@ namespace Conversion.Converters{
       }else if(index == 3){
         return MILE_TO_METER;
       }else if(index == 4){
-        return MM_TO_METER;
+        return NMILE_TO_METER;
       }else if(index == 5){
-        return CM_TO_METER;
+        return MM_TO_METER;
       }else if(index == 6){
-        return 1.0;
+        return CM_TO_METER;
       }else if(index == 7){
+        return 1.0;
+      }else if(index == 8){
         return KM_TO_METER;
       }
 
